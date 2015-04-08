@@ -31,8 +31,8 @@
     "lodash": "^3.5.0",
     "moment": "^2.9.0",
     "pubsub-js": "^1.5.2",
-    "react-bootstrap": "^0.17.0",
-    "react-router": "^0.12.4",
+    "react-bootstrap": "^0.20.2",
+    "react-router": "^0.13.2",
     "react-tagsinput": "^0.3.2",
     "reactify": "^0.15.2",
     "require-dir": "^0.1.0",
@@ -40,6 +40,6 @@
     "watchify": "^2.1.1"
   },
   "dependencies": {
-    "react": "~0.12.0"
+    "react": "^0.13.1"
   }
 }

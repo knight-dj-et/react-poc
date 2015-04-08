@@ -4,7 +4,7 @@ var React = require('react'),
     $ = require('jquery'),
     PubSub = require('pubsub-js');
 
-//var AuthenticationRequired = require("../Authentication/AuthenticationRequired");
+var AuthenticationRequired = require("../Authentication/AuthenticationRequired");
 
 jQuery("html").on("click.selectableDivs", ".selectableDivs", function(){
     jQuery(this).toggleClass("active");
@@ -79,7 +79,7 @@ var ContentAdmin = AuthenticationRequired.requireAuth(React.createClass({
 	</div>
     );
   }
-// }));
+}));
 
 
 var ContentAdmin = React.createClass({
