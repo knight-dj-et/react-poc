@@ -8,7 +8,7 @@ jQuery("html").on("click.selectableEmailDivs", ".email-select .selectableEmailDi
     jQuery(this).toggleClass("active");
 });
 
-//var AuthenticationRequired = require("../Authentication/AuthenticationRequired");
+var AuthenticationRequired = require("../Authentication/AuthenticationRequired");
 var Link = Router.Link;
 
 //components
@@ -51,30 +51,7 @@ var SendModal = React.createClass({
 });
 
 
-// var CreateEmail = AuthenticationRequired.requireAuth(React.createClass({
-//   render: function() {
-//     return (
-// 	<div>
-//     <div className="row pageTitle">
-//   		<div className="col-md-8">
-//   		  <h2>Send Email</h2>
-//   		</div>
-//   		<div className="col-md-4 pull-right">
-//   			<AlertAutoDismissable />
-//   		</div>
-//     </div>
-//     <div className="row">
-//   		<div className="col-md-12">
-//   			<Wizard />
-//   		</div>
-//     </div>
-// 	</div>
-//     );
-//   }
-// }));
-
-
-var CreateEmail = React.createClass({
+var CreateEmail = AuthenticationRequired.requireAuth(React.createClass({
   render: function() {
     return (
 	<div>
@@ -94,7 +71,7 @@ var CreateEmail = React.createClass({
 	</div>
     );
   }
-});
+ }));
 
 /****  WIZARD *****/
 
